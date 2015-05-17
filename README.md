@@ -2,6 +2,8 @@
 
 OmniAuth strategy for [PG&E's Share My Data](http://www.pge.com/en/myhome/addservices/sharemydata/vendor/testrequirements/index.page) using OAuth2.
 
+[![Gem Version](https://badge.fury.io/rb/omniauth-pge.png)](https://rubygems.org/gems/omniauth-pge) [![Build Status](https://travis-ci.org/doomspork/omniauth-pge.svg?branch=master)](https://travis-ci.org/doomspork/omniauth-pge) [![Code Climate](https://codeclimate.com/github/doomspork/omniauth-pge/badges/gpa.svg)](https://codeclimate.com/github/doomspork/omniauth-pge) [![Coverage Status](https://coveralls.io/repos/doomspork/omniauth-pge/badge.png)](https://coveralls.io/r/doomspork/omniauth-pge) [![Dependency Status](https://gemnasium.com/doomspork/omniauth-pge.svg)](https://gemnasium.com/doomspork/omniauth-pge)
+
 ## Usage
 
 Add the strategy to your `Gemfile` alongside OmniAuth:
