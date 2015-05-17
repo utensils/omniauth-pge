@@ -2,9 +2,32 @@
 
 OmniAuth strategy for [PG&E's Share My Data](http://www.pge.com/en/myhome/addservices/sharemydata/vendor/testrequirements/index.page) using OAuth2.
 
-## Installation
+## Usage
 
-    $ gem install omniauth-pge
+Add the strategy to your `Gemfile` alongside OmniAuth:
+
+```ruby
+gem 'omniauth'
+gem 'omniauth-pge'
+```
+
+Then integrate the strategy into your middleware:
+
+```ruby
+use OmniAuth::Builder do
+  provider :pge, ENV['PGE_CLIENT_ID'], ENV['PGE_CLIENT_SECRET']
+end
+```
+
+In Rails, you'll want to add to the middleware stack:
+
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :pge, ENV['PGE_CLIENT_ID'], ENV['PGE_CLIENT_SECRET']
+end
+```
+
+For additional information, refer to the [OmniAuth wiki](https://github.com/intridea/omniauth/wiki).
 
 ## Contributing
 
